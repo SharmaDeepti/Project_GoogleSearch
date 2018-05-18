@@ -1,0 +1,47 @@
+=> GoogleSearchProject.Feature.GoogleSearchFeature.CountOfLinksDisplayedAfterSearchingAvivaInGoogle
+Given I open browser
+-> done: GoogleSearchSteps.GivenIOpenBrowser() (5.1s)
+And I go to Google homepage
+-> done: GoogleSearchSteps.GivenIGoToGoogleHomepage() (6.9s)
+When I enter "Aviva" to search
+Searching text in google
+-> done: GoogleSearchSteps.WhenIEnterAivvaToSearch(""Aviva"") (3.5s)
+And I hit the Enter button
+-> done: GoogleSearchSteps.WhenIHitTheEnterButton() (3.0s)
+Then I should see links in first search page
+Total number of links in first search page is: 12
+Number of search links are : 12
+The text at 5 location is : Child Insurance Plans
+-> done: GoogleSearchSteps.ThenIShouldSeeLinksInFirstSearchPage() (0.3s)
+=> GoogleSearchProject.Feature.GoogleSearchFeature.CountOfLinksForSearchingOtherThanAvivaInGoogle("Aivva1",null)
+Given I open browser
+-> done: GoogleSearchSteps.GivenIOpenBrowser() (3.8s)
+And I go to Google homepage
+-> done: GoogleSearchSteps.GivenIGoToGoogleHomepage() (10.4s)
+When I enter Aivva1 to search
+Searching text in google
+-> done: GoogleSearchSteps.WhenIEnterAivvaToSearch("Aivva1") (2.3s)
+And I hit the Enter button
+-> done: GoogleSearchSteps.WhenIHitTheEnterButton() (1.7s)
+Then I should not see previous links in first search page
+Total number of links in first search page is: 10
+Number of search links are : 10
+The text at 5 location is : THESAVRVS IVRIS EMPHYTEVTICI: CONTINENS I. Tractatum absolutissimum ...
+-> done: GoogleSearchSteps.ThenIShouldNotSeePreviousLinksInFirstSearchPage() (0.1s)
+=> GoogleSearchProject.Feature.GoogleSearchFeature.CountOfLinksForSearchingOtherThanAvivaInGoogle("abva",null)
+Given I open browser
+-> done: GoogleSearchSteps.GivenIOpenBrowser() (4.5s)
+And I go to Google homepage
+-> done: GoogleSearchSteps.GivenIGoToGoogleHomepage() (7.3s)
+When I enter abva to search
+Searching text in google
+-> done: GoogleSearchSteps.WhenIEnterAivvaToSearch("abva") (3.1s)
+And I hit the Enter button
+-> done: GoogleSearchSteps.WhenIHitTheEnterButton() (2.7s)
+Then I should not see previous links in first search page
+Total number of links in first search page is: 10
+Number of search links are : 10
+The text at 5 location is : ABVA - What does ABVA stand for? The Free Dictionary
+-> done: GoogleSearchSteps.ThenIShouldNotSeePreviousLinksInFirstSearchPage() (0.1s)
+=> GoogleSearchProject.Feature.GoogleSearchFeature
+-> Using app.config
